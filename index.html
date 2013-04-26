@@ -66,21 +66,89 @@
         </div>
 
         <div class="slide">
-            <h1>Heroku</h1>
+		<img src="http://www.thezombienation.com/blogpicts/Resident-Evil-pict1.jpg"/>
         </div>
 
         <div class="slide">
-            <h1></h1>
-            <div class="vcenter">
-                <ul>
-                    <li></li>
-                </ul>
-            </div>
-        </div>    
+		<img src="http://blog.sucuri.net/wp-content/uploads/2013/04/Screen-Shot-2013-04-16-at-11.22.31-AM.png"/>
+        </div>
+
+        <div class="slide">
+		<h1>MATT</h1>
+		<p>
+Here’s what I would recommend: If you still use “admin” as a username on your blog, change it, use a strong password, if you’re on WP.com turn on two-factor authentication, and of course make sure you’re up-to-date on the latest version of WordPress. Do this and you’ll be ahead of 99% of sites out there and probably never have a problem. 
+		</p>
+	</div>
+
+        <div class="slide">
+		<h1> WEBSERVER BLOCK</h1>
+	
+.htaccess
+# bruteforce attack 28-03-2013 nr
+Order allow,deny
+Allow from all
+Deny from 65.51.68.200 
+	</div>
+
+        <div class="slide">
+what about HTTP BASIC AUTH
+	</div>
+
+        <div class="slide">
+IPTABLES
+
+iptables -I INPUT -s 65.51.68.200 -j DROP
+	</div>
+
+        <div class="slide">
+
+FAIL2BAN
+
+wp-fail2ban 
+	</div>
+
+        <div class="slide">
+	
+
+<Files wp-login.php>
+Deny from all
+ErrorDocument 403 "Denied"
+ErrorDocument 500 "Denied"
+</Files>
+	</div>
+
+        <div class="slide">
+
+
+
+    <IfModule mod_rewrite.c>
+        # disable wp-login.php
+        RewriteCond %{THE_REQUEST} wp-login.php[\ /?].*HTTP/
+        RewriteRule ^.*$ - [R=404,L]
+    </IfModule>
+	</div>
+
+        <div class="slide">
+
+
+over 120 PW sites
+
+DDoS
+	</div>
 
         <div class="slide" data-layout="alt">
             <div class="vcenter">
                 <h1>THE END</h1>
+		<h2>RESOURCES</h2>
+
+		<ul>
+			<li>http://wpscan.org</li>
+			<li>http://blog.sucuri.net/2013/04/the-wordpress-brute-force-attack-timeline.html</li>
+			<li>http://ma.tt/2013/04/passwords-and-brute-force/</li>
+			<li>http://wordpress.org/extend/plugins/lockdown-wp-admin/</li>
+			<li>http://wordpress.org/extend/plugins/wp-fail2ban/</li>
+			<li>http://www.fail2ban.org/wiki/index.php/Main_Page</li>
+		</ul>
             </div>
         </div>          
 
