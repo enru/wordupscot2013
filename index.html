@@ -2,34 +2,44 @@
 <html>
     <head>
         <title>How to Survive the Zombie Apocalpyse</title>
+
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
         <meta name="generator" content="Organic" />
         <meta name="author" content="Neill Russell (enru)" />
         <meta name="company" content="enru technology" />
         <meta name="email" content="n@enru.co.uk" />
         <meta name="date" content="2013-04-26" />
-        <meta name="venue" content="edpug" />
+        <meta name="venue" content="wordup scotland 2013" />
         <meta name="viewport" content="width=device-width, initial-scale=1.5, maximum-scale=1.5"/>
+
         <script type="text/javascript" src="slippy/src/jquery.min.js"></script>
         <script type="text/javascript" src="slippy/src/jquery.history.js"></script>
+
         <script type="text/javascript" src="slippy/src/slippy.js"></script>
         <link type="text/css" rel="stylesheet" href="slippy/src/slippy.css"/>
         <link type="text/css" rel="stylesheet" href="slippy/src/slippy-pure.css"/>
+
         <script type="text/javascript" src="highlighter/scripts/shCore.js"></script>
         <script type="text/javascript" src="highlighter/scripts/shBrushBash.js"></script>
         <script type="text/javascript" src="highlighter/scripts/shBrushPhp.js"></script>
         <script type="text/javascript" src="highlighter/scripts/shBrushPlain.js"></script>
         <script type="text/javascript" src="highlighter/scripts/shBrushSql.js"></script>
         <script type="text/javascript" src="highlighter/scripts/shBrushXml.js"></script>
+
+	<!--
         <link type="text/css" rel="stylesheet" href="highlighter/styles/shCoreRDark.css"/>
         <link type="text/css" rel="stylesheet" href="highlighter/styles/shThemeRDark.css"/>
+	-->
+        <link type="text/css" rel="stylesheet" href="highlighter/styles/shCoreDefault.css"/>
+        <link type="text/css" rel="stylesheet" href="highlighter/styles/shThemeDefault.css"/>
 
         <script type="text/javascript">
             $(function() {
                 $(".slide").slippy({
-                    ratio: 1.69
+			ratio: 1.69
+			,baseWidth: false
                 });
-                SyntaxHighlighter.defaults['gutter'] = false;
+                //SyntaxHighlighter.defaults['gutter'] = false;
                 SyntaxHighlighter.all();
             });
         </script>
@@ -65,90 +75,163 @@
             </div>
         </div>
 
-        <div class="slide">
-		<img src="http://www.thezombienation.com/blogpicts/Resident-Evil-pict1.jpg"/>
+        <div class="slide" style="text-align:center">
+		<img src="http://www.thezombienation.com/blogpicts/Resident-Evil-pict1.jpg" />
         </div>
 
         <div class="slide">
-		<img src="http://blog.sucuri.net/wp-content/uploads/2013/04/Screen-Shot-2013-04-16-at-11.22.31-AM.png"/>
+		<h1>botnet (zombie army)</h1>
+		<div class="vcenter">
+			<p>&quot;
+			A botnet (also known as a zombie army) is a number of Internet computers that, 
+			although their owners are unaware of it, have been set up to forward transmissions 
+			(including spam or viruses) to other computers on the Internet.
+			&quot;</p>
+			<a href="http://searchsecurity.techtarget.com/definition/botnet">http://searchsecurity.techtarget.com/definition/botnet</a>
+        	</div>
         </div>
 
         <div class="slide">
-		<h1>MATT</h1>
+		<h1>dictionary attack</h1>
+		<div class="vcenter">
+			<p>&quot;
+			... is a technique for defeating a cipher or authentication mechanism 
+			by trying to determine its decryption key or passphrase 
+			by trying hundreds or sometimes millions of likely possibilities
+			&quot;</p>
+			<a href="http://en.wikipedia.org/wiki/Dictionary_attack">http://en.wikipedia.org/wiki/Dictionary_attack</a>
+        	</div>
+        </div>
+
+        <div class="slide">
+		<h1>wp-login.php attack</h1>
 		<p>
-Here’s what I would recommend: If you still use “admin” as a username on your blog, change it, use a strong password, if you’re on WP.com turn on two-factor authentication, and of course make sure you’re up-to-date on the latest version of WordPress. Do this and you’ll be ahead of 99% of sites out there and probably never have a problem. 
+109.230.246.37 - - [09/Apr/2013:11:53:14 +0000] "POST /wp-login.php HTTP/1.1" 302 - "-" "Mozilla/5.0 (X11; U; Linux i686; pt-BR; rv:1.9.0.15) Gecko/2009102815 Ubuntu/9.04 (jaunty) Firefox/3.0.15" <br/>
+109.230.246.37 - - [09/Apr/2013:11:53:47 +0000] "POST /wp-login.php HTTP/1.1" 302 - "-" "Mozilla/5.0 (X11; U; Linux i686; pt-BR; rv:1.9.0.15) Gecko/2009102815 Ubuntu/9.04 (jaunty) Firefox/3.0.15"<br/>
+109.230.246.37 - - [09/Apr/2013:11:55:26 +0000] "POST /wp-login.php HTTP/1.1" 302 - "-" "Mozilla/5.0 (X11; U; Linux i686; pt-BR; rv:1.9.0.15) Gecko/2009102815 Ubuntu/9.04 (jaunty) Firefox/3.0.15"<br/>
 		</p>
+        </div>
+
+        <div class="slide" style="text-align:center">
+		<h1>the numbers</h1>
+		<p>
+		<img src="http://blog.sucuri.net/wp-content/uploads/2013/04/Screen-Shot-2013-04-16-at-11.22.31-AM.png" style="width: 80%"/>
+		</p>
+		<a href="http://blog.sucuri.net/2013/04/the-wordpress-brute-force-attack-timeline.html">http://blog.sucuri.net/2013/04/the-wordpress-brute-force-attack-timeline.html</a>
+        </div>
+
+        <div class="slide" style="text-align:center">
+		<img src="http://www.thezombienation.com/blogpicts/Resident-Evil-pict1.jpg" />
+        </div>
+
+        <div class="slide">
+		<h1>MATT <span style="text-transform: lowercase">says</span></h1>
+		<div class="vcenter">
+			<p>&quot;
+Here’s what I would recommend: If you still use 'admin' as a username on your blog, change it, use a strong password, if you’re on WP.com turn on two-factor authentication, and of course make sure you’re up-to-date on the latest version of WordPress. Do this and you’ll be ahead of 99% of sites out there and probably never have a problem. 
+		&quot;</p>
+		<a href="http://ma.tt/2013/04/passwords-and-brute-force/">http://ma.tt/2013/04/passwords-and-brute-force/</a>
+		</div>
 	</div>
 
         <div class="slide">
-		<h1> WEBSERVER BLOCK</h1>
-	
-.htaccess
-# bruteforce attack 28-03-2013 nr
-Order allow,deny
-Allow from all
-Deny from 65.51.68.200 
-	</div>
-
-        <div class="slide">
-what about HTTP BASIC AUTH
-	</div>
-
-        <div class="slide">
-IPTABLES
-
-iptables -I INPUT -s 65.51.68.200 -j DROP
-	</div>
-
-        <div class="slide">
-
-FAIL2BAN
-
-wp-fail2ban 
-	</div>
-
-        <div class="slide">
-	
-
-<Files wp-login.php>
-Deny from all
-ErrorDocument 403 "Denied"
-ErrorDocument 500 "Denied"
-</Files>
-	</div>
-
-        <div class="slide">
-
-
-
-    <IfModule mod_rewrite.c>
-        # disable wp-login.php
-        RewriteCond %{THE_REQUEST} wp-login.php[\ /?].*HTTP/
-        RewriteRule ^.*$ - [R=404,L]
-    </IfModule>
-	</div>
-
-        <div class="slide">
-
-
-over 120 PW sites
-
-DDoS
-	</div>
-
-        <div class="slide" data-layout="alt">
-            <div class="vcenter">
-                <h1>THE END</h1>
-		<h2>RESOURCES</h2>
-
-		<ul>
-			<li>http://wpscan.org</li>
-			<li>http://blog.sucuri.net/2013/04/the-wordpress-brute-force-attack-timeline.html</li>
-			<li>http://ma.tt/2013/04/passwords-and-brute-force/</li>
-			<li>http://wordpress.org/extend/plugins/lockdown-wp-admin/</li>
-			<li>http://wordpress.org/extend/plugins/wp-fail2ban/</li>
-			<li>http://www.fail2ban.org/wiki/index.php/Main_Page</li>
+		<h1>our problem</h1>
+		<ul class="vcenter">
+			<li class="incremental">over 120 WordPress sites</li>
+			<li class="incremental">across multiple servers</li>
+			<li class="incremental">most with &quot;admin&quot; username</li>
+			<li class="incremental">zombie hoard still POSTing to wp-login.php</li>
+			<li class="incremental">effectively a Distribute Denial of Service (DDoS)</li>
 		</ul>
+	</div>
+
+        <div class="slide">
+		<h1><span style="text-transform: lowercase;">.htaccess</span> & access control</h1>
+		<div class="vcenter">
+			<pre class="brush:shell">
+				Order allow,deny
+				Allow from all
+				Deny from 65.51.68.200 
+			</pre>
+		</div>
+	</div>
+
+        <div class="slide">
+		<h1>IPTABLES</h1>
+		<div class="vcenter">
+			<pre class="brush:bash">
+				iptables -I INPUT -s 65.51.68.200 -j DROP
+			</pre>
+			<br/>
+			<br/>
+			<ul>
+				<li class="incremental">linux kernel firewall</li>
+				<li class="incremental">stops zombies at OS level</li>
+			</ul>
+		</div>
+	</div>
+
+        <div class="slide">
+		<h1>FAIL2BAN</h1>
+		<div class="vcenter">
+			<ul>
+				<li class="incremental">automates adding IP addresses to iptables</li>
+				<li class="incremental">runs as a daemon &amp; reads logs for authentication failues</li>
+				<li class="incremental">WordPress plugin available <a href="http://wordpress.org/extend/plugins/wp-fail2ban/">wp-fail2ban</a></li>
+				<li class="incremental">writes wp-login.php auth failures to a system log</li>
+				<li class="incremental"><a href="http://www.fail2ban.org/">http://www.fail2ban.org/</a></li>
+			</ul>
+		</div>
+	</div>
+
+        <div class="slide">
+		<h1>COMPLETE LOCKDOWN</h1>
+		<h2>using &lt;Files&gt; Directive</h2>
+		<div class="vcenter">
+			<script type="syntaxhighlighter" class="brush: plain"><![CDATA[
+				<Files wp-login.php>
+				Deny from all
+				ErrorDocument 403 "Denied"
+				ErrorDocument 500 "Denied"
+				</Files>]]></script>
+		</div>
+		<h2>using mod_rewrite</h2>
+		<div class="vcenter">
+			<script type="syntaxhighlighter" class="brush: plain"><![CDATA[
+			    <IfModule mod_rewrite.c>
+				# disable wp-login.php
+				RewriteCond %{THE_REQUEST} wp-login.php[\ /?].*HTTP/
+				RewriteRule ^.*$ - [R=404,L]
+			    </IfModule>]]></script>
+		</div>
+	</div>
+
+        <div class="slide" style="text-align: center">
+		<h1>what about BASIC HTTP AUTH?</h1>
+		<img src="http://www.codeproject.com/KB/aspnet/mybasicauthentication/mybasicauthentication.jpg"/>
+	</div>
+
+
+        <div class="slide">
+		<h1>solution</h1>
+		<div class="vcenter">
+		<ul>
+			<li class="incremental">move or rename <code>wp-login.php</code></li>
+			<li class="incremental">move, rename or hide <code>wp-admin</code></li>
+			<li class="incremental">there's a plugin for that!</li>
+			<li class="incremental"> <a href="http://wordpress.org/extend/plugins/lockdown-wp-admin/">lockdown-wp-admin</a> </li>
+			<li class="incremental">rename &quot;admin&quot; user</li>
+			<li class="incremental">i wrote a script for that!</li>
+			<li class="incremental"><h2>TODO:</h2></li> 
+			<li class="incremental">two factor authentication</li> 
+		<ul>
+		</div>
+	</div>
+
+        <div class="slide" data-layout="alt" style="text-align:center">
+            <div class="vcenter">
+		<p>The zombie hoard forced us to do what we knew we had to do but hadn't done.</p>
+                <h1>THE END</h1>
             </div>
         </div>          
 
